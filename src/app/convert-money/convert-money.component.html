@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <p class = "topic">Конвертер валют</p>
+    <div class="convert">
+        <div class = "convert__box">
+            <label>Перша валюта:</label>
+            <input type="number" [(ngModel)]="amount1" (ngModelChange)="convertCurrency(1)" />
+            <select [(ngModel)]="currency1" (ngModelChange)="convertCurrency(2)">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+            </select>
+        </div>
+        <img src="../../assets/img/converter-min-arr.png" alt="" width="40">
+        <div class = "convert__box">
+            <label>Друга валюта:</label>
+            <input type="number" [(ngModel)]="amount2" (ngModelChange)="convertCurrency(2)" />
+            <select [(ngModel)]="currency2" (ngModelChange)="convertCurrency(1)">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+            </select>
+        </div>
+    </div>
+</div>
